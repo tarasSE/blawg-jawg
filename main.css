@@ -1,0 +1,198 @@
+html {
+  text-align: center;
+  background-color: #eee6ce;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.buttons {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.lost {
+  color: brown;
+}
+
+.won {
+  color: darkgreen;
+}
+
+.hide {
+  display: none;
+}
+
+.game {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.table {
+  border: 1px solid #2eb086;
+  display: inline-flex;
+  font-size: 150%;
+  color: cornsilk;
+  width: 80%;
+  justify-items: center;
+  flex-flow: row-reverse;
+}
+
+@media screen and (max-width: 1300px) {
+  .table {
+    width: 100%;
+  }
+}
+
+.left {
+  display: inline-flex;
+  flex-direction: column;
+  width: 17vw;
+  height: 17vw;
+  padding: 2%;
+}
+
+.right {
+  border: 1px solid #2eb086;
+
+  flex: 1 1 auto;
+  overflow: hidden;
+  display: inline-flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.dealer_avatar {
+  display: inline-flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(./imgs/dealer-regular.png);
+  background-position: center;
+}
+
+.dealer_avatar.win {
+  background-image: url(./imgs/dealer-win.png);
+}
+
+.dealer_avatar.lose {
+  background-image: url(./imgs/dealer-lose.png);
+}
+
+.player_avatar {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(./imgs/player.png);
+  background-position: center;
+}
+
+.dealer {
+  background: #313552;
+}
+
+.player {
+  background: #b8405e;
+}
+
+.cards {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: start;
+}
+
+.card {
+  overflow: hidden;
+  display: inline-flex;
+  border: solid 0.5vw whitesmoke;
+  flex-direction: column;
+  width: 12vw;
+  height: 17vw;
+  margin: 1%;
+  background-color: cadetblue;
+  border-radius: 5px;
+}
+
+.card .value {
+  display: inline-flex;
+  width: 100%;
+  padding: 10%;
+  font-size: xx-large;
+}
+
+.card .face {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+
+  background-image: url(./imgs/face.png);
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+
+.card .back {
+  display: inline-flex;
+  padding: 4%;
+  width: auto;
+  height: 100%;
+
+  background-image: url(./imgs/back.png);
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+#result {
+  padding: 1%;
+  font-size: xx-large;
+}
+
+#results_total {
+  font-size: x-large;
+}
+
+a {
+  font-size: 150%;
+  align-items: center;
+  background-color: #2eb086;
+  border: 0;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 1%;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  text-decoration: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black jack</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <div class="buttons">
+      <a href="#" id="restart_button">START</a>
+      <a href="#" class="action hide" id="hit_button">HIT</a>
+      <a href="#" class="action hide" id="stand_button">STAND</a>
+      <span id="results_total">WIN: 0, LOSE: 0</span>
+      <a id="fullscreen" href="#">[&nbsp;&nbsp;]</a>
+    </div>
+    <span id="result">&nbsp;</span>
+    <div id="game" class="game">
+      <div class="table dealer">
+        <div class="left">
+          <div class="dealer_avatar"></div>
+          <div>DEALER</div>
+          <div>Dealers count: <span id="dealer_count"></span></div>
+        </div>
+        <div class="right">
+          <div id="dealer_cards" class="cards"></div>
+        </div>
+      </div>
+
+      <div class="table player">
+        <div class="left">
+          <div class="player_avatar"></div>
+          <div>PLAYER</div>
+          <div>Your count: <span id="player_count"></span></div>
+        </div>
+        <div class="right">
+          <div id="player_cards" class="cards"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
